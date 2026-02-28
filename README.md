@@ -30,18 +30,19 @@ Linux Environment: Designed specifically for the Linux x86_64 kernel.
 
 Root Privileges: Required for opening raw sockets.
 
-🔨 Build and Run
-Assemble the source code:
+### 🔨 Build and Run
 
-Bash
+1. **Assemble the source code:**
+```bash
 nasm -f elf64 icmp_sniff.asm -o icmp_sniff.o
-Link the object file:
-
-Bash
+```
+2. Link the object file:
+```bash
 ld icmp_sniff.o -o icmp_sniff
-Run with root privileges:
-
-Bash
+```
+3. Run with root privileges:
+```bash
 sudo ./icmp_sniff
+```
 ⚠️ Disclaimer
 This project is developed for educational and ethical security research purposes only. The author is not responsible for any misuse of this tool. Unauthorized sniffing of network traffic may be illegal in your jurisdiction.
